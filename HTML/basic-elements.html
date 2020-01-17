@@ -1,0 +1,102 @@
+<!-- DOCTYPE tells the version of the html -->
+<!DOCTYPE html>
+<!-- html tag contains the whole page -->
+<html>
+<!-- head tag has the information about the webpage such as title, metatags, etc -->
+
+<head>
+    <!-- meta tags -->
+    <!-- meta charset unicode transformation format 8 (8 bits per character) -->
+    <meta charset="utf-8" />
+    <!-- meta keywords which helps in seo -->
+    <meta name="keywords" content="Online, Shopping" />
+    <!-- Page refresh for every 2 minutes -->
+    <meta http-equiv="refresh" content="120">
+    <!-- Title of a webpage -->
+    <title>Hussain's Shopping</title>
+</head>
+<!-- body of the html page which is visible to the user -->
+
+<body>
+    <!-- sectioning -->
+    <!--header, nav, section, article, aside, footer -->
+    <header>
+        <nav> <a href="Login.html"> Login </a> | <a href="Signup.html"> SignUp </a> | <a href="Track.html"> Track order
+            </a> </nav>
+        <!-- Container elements enclose something inside it -->
+        <!-- html, body, h1-h6, p, div, etc -->
+        <!-- Empty elements do not elclose anything inside -->
+        <!-- br, img -->
+
+        <!-- Block Elements occupy the whole row-->
+        <!-- h1 - h6, p, div, form -->
+        <!-- Inline Elements allow other elements when there is space-->
+        <!-- span, img, a -->
+
+        <h1>Welcome to Hussain's Shopping</h1>
+        <!-- bookmarks help us navigate to a section within the same page (Eg: #Media) -->
+        <nav> <a href="#Clothing"> Clothing </a> | <a href="#Media"> Media </a> </nav>
+    </header>
+    <article>
+        Hussain & Covery own one-stop solution for all your shopping needs !
+        <br />Dont believe us? Click on the offers and check it out for yourself !!
+        <h2 id="Clothing"> Clothing </h2>
+        <h2 id="Media"> Media </h2>
+    </article>
+    <section>
+
+        <!-- grouping -->
+        <!-- division element, unordered list, ordered list, description list -->
+        <h2>Division Element</h2>
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+        </div>
+        <h2>Unordered List</h2>
+        <ul type="square">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+        <h2>Ordered List</h2>
+        <ol type="i">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+        <h3>Description List</h3>
+        <dl>
+            <dt>Description Term 1</dt>
+            <dd>Description Definition 1</dd>
+            <dt>Description Term 2</dt>
+            <dd>Description Definition 2</dd>
+        </dl>
+
+        <!-- quotation and citation -->
+        <!-- blockquote -->
+        <h2>Blockquote</h2>
+
+        <blockquote cite="https://www.infosys.com/about/">
+            Infosys is a global leader in next-generation digital services and consulting. We enable clients in 46
+            countries to navigate their digital transformation.
+        </blockquote>
+        <!-- global attribute -->
+        <!-- id, contenteditable, title (tooltip), spellcheck, dir (text direction)  -->
+        <p contenteditable="true" spellcheck="true" dir="ltr">Content Editable and Spell check</p>
+    </section>
+    <br /><br />
+    <footer>
+        <!-- character entities -->
+        <!-- &nbsp; &lt; &gt; &amp; &copy; &euro; &pound; &reg; -->
+        <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav> Copyright &copy; 2018 | Giri
+    </footer>
+    <!-- text sematics -->
+    <!-- abbr, q, small, mark, strong, em, sub, sup -->
+    <aside>
+        &lt;Like&gt; and &lt;Connect&gt; with us <abbr title="Facebook">FB</abbr> Twitter <abbr
+            title="Google Plus">g+</abbr>
+    </aside>
+</body>
+
+</html>

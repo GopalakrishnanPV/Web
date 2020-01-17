@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Elements</title>
+</head>
+
+<body>
+    <!-- form element -->
+    <form oninput="ratingoutput.value = parseInt(ratinginput.value)">
+        <h2>Sign Up!</h2>
+        <!-- input elements -->
+        <!-- text, password, radio, checkbox, file, button, submit, image, reset, hidden, email, number, url, date, week, month, time, color, search, range -->
+
+        <!-- input element attributes -->
+        <!-- placeholder, required, pattern, min, max, step, form-override, multiple -->
+
+        <!-- text boxes -->
+        <label for="userName">Enter Username: </label> <input type="text" name="userName" placeholder="Enter a username"
+            pattern="[a-zA-Z]+" /> <br />
+        <label for="password">Enter Password: </label> <input type="password" name="password"
+            placeholder="Enter a Password" required /> <br />
+        <!-- radio buttons -->
+        Male <input type="radio" name="genderRadioBtn" value="Male" checked />
+        Female <input type="radio" name="genderRadioBtn" value="Female" />
+        Transgender <input type="radio" name="genderRadioBtn" value="Transgender" /> <br />
+        <!-- date picker -->
+        DOB: <input type="date" name="datePicker" /> <br />
+        <!-- number -->
+        Phone Number: <input type="number" name="phnumber" min="18" max="90" step="3" /><br />
+        <!-- email -->
+        Email ID: <input type="email" name="email" multiple /><br />
+        <!-- checkboxes -->
+        <input type="checkbox" name="languageCheckbx" value="tamil" /> Tamil
+        <input type="checkbox" name="languageCheckbx" value="english" /> English
+        <input type="checkbox" name="languageCheckbx" value="malayalam" `1 /> Malayalam<br />
+        <!-- file -->
+        Profile Picture: <input type="file" name="fileUpload" multiple /> <br />
+        <!-- textarea -->
+        <label for="comments">Enter your comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="3">Enter your comments</textarea><br />
+        <!-- select -->
+        <label for="cardropdown">Select your favorite car: </label>
+        <select id="cardropdown">
+            <option value="mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+        </select> <br />
+        <!-- meter -->
+        Meter: <meter min="0" max="100" value="30">Meter is unsupported in this browser. </meter> <br />
+        <!-- progress -->
+        Progress Bar: <progress min="0" max="100" value="40">Progressbar is unsupported in this browser.
+        </progress><br />
+        <!-- autocomplete and autofocus -->
+        <label for="hobbies">Select your hobbies: </label>
+        <input list="hobbies" autocomplete="off" autofocus />
+        <!-- datalist -->
+        <datalist id="hobbies">
+            <option value="Chess">Play Chess</option>
+            <option value="Cricket">Play Cricket</option>
+        </datalist> <br />
+        <!-- output | need to add oninput attribute in the form tag-->
+        Rate your experience:
+        <input type="range" id="ratinginput" min="0" max="100" />
+        <output for="ratinginput" id="ratingoutput"></output>
+        <!-- buttons -->
+        <input type="submit" name="submitBtn" value="Submit" formnovalidate />
+        <input type="reset" name="resetBtn" value="Reset" />
+
+        <input type="button" name="button" value="Click Me!" />
+        <!-- hidden input -->
+        <input type="hidden" name="hiddenInput" value="en-US" /> <br />
+        <input type="text" name="hiddenInputText" value="en-US" hidden /> <br />
+
+        <!-- image as submit button -->
+        <input type="image" src="submit.png" alt="Submit" /> <br />
+        <!-- range -->
+        Looking for: <input type="range" name="ageRange" /> <br />
+        <!-- search -->
+        Search: <input type="search" name="Search" /><br />
+        <!-- url -->
+        Enter a URL: <input type="url" name="url" /><br />
+        <!-- color picker -->
+        Pick your favorite color: <input type="color" name="colorPicker" /> <br />
+        <!-- week picker -->
+        Select a week: <input type="week" name="weekPicker" /> <br />
+        <!-- month picker -->
+        Select a month: <input type="month" name="monthPicker"> <br />
+        <!-- time picker -->
+        Select a time: <input type="time" name="timePicker"><br />
+        <!-- editing elements -->
+        <p>Html is the building block of the <del>webpage</del> <ins>Internet</ins></p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="Friends.PNG" />
+        <h2>Friendship Zone</h2>
+    </header>
+    <article>
+        <h4>Add your details to register</h4>
+        <form>
+            <label for="userName">Name:</label>
+            <input id="userName" type="text" placeholder="Enter your name" minlength="3" pattern="[a-zA-Z]+" required
+                autocomplete="off" /><br /><br />
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" autofocus /><br /><br />
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="18" /><br /><br />
+            <label for="birthDay">Birth Day:</label>
+            <input id="birthDay" type="date" /><br /><br />
+            <label for="gender">Gender:</label>
+            <input id="gender" type="radio" value="M" />M
+            <input id="gender" type="radio" value="F" />F<br /><br />
+            <label for="about">About:</label>
+            <textarea id="about" cols="50" rows="5"></textarea><br /><br />
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" /><br /><br />
+            <label for="interest">Interested in:</label>
+            <input id="interest" type="checkbox" value="Friendship" />Friendship
+            <input id="interest" type="checkbox" value="Dating" />Dating
+            <strong>Attachment:</strong><input type="file" id="fileUpload" /><br /><br />
+            <input type="submit" value="Register" formaction="RegistrationConfirmation.html" />
+            <input type="submit" value="Register as Admin" formaction="RegistrationConfirmationforAdmin.html" />
+
+        </form>
+    </article>
+</body>
+
+</html>
