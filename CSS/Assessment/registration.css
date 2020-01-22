@@ -1,0 +1,24 @@
+html{
+    background-color: #a52a2a;
+}
+body{
+    border: 1px solid #a52a2a;
+    position: relative;
+    width: 20%;
+    height: 70%;
+    top: 10%;
+    left: 40%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+input[type="text"]:enabled{
+    background-color: #ffd68a ;
+}
+input[type="text"]:required{
+    background-color: #90ee90;
+}
+
+input:disabled{
+    background-color: #ffff8f;
+}

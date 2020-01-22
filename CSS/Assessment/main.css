@@ -18,7 +18,7 @@ nav ul li{
     
 }
 
-nav ul li:hover{
+nav ul li:hover, nav ul li:active{
     background-color:#cf5c3f;
 }
 nav ul li a{
@@ -26,34 +26,41 @@ nav ul li a{
     color: #ffffff;
 }
 
-
-div article{
+div:first-child {
     width: 65%;
     float: left;
+}
+
+div article{
     background-color: #ffffff;
     padding-left: 15px;
     border: 1px solid #bbb;
+    margin-bottom: 10px;
 }
 
-aside article{
-    margin-left: 100px;
+aside {
+    width: 32%;
     background-color: #ffffff;
+    float: right;
+    margin-bottom: 10px;
+    padding-left: 15px;
 }
-
 footer{
-    clear: both;
-    background-color: #666666;
-    padding:1px 10px;
-}
-footer p{
-    color: #ffffff;
-}
-header+footer{
     padding: 0px;
     background-color: transparent;
 
 }
-header+footer p{
+footer p{
     font-style: italic;
     color: #999999;
 }
+
+#copyright{
+    clear: both;
+    background-color: #666666;
+    padding:1px 10px;
+}
+#copyright p{
+    color: #ffffff;
+}
+
