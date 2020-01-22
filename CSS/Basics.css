@@ -1,0 +1,50 @@
+header {
+    background: url("https://images.pexels.com/photos/1093126/pexels-photo-1093126.jpeg") blue;
+    background-size: contain;
+    margin-top: -20px;
+
+}
+
+
+/* Background color will become red instead of green because of the important tag */
+h2{
+    background-color: grey !important;
+}
+
+/* id selector is used when a single element needs a different styling */
+#idexample{
+    color: red;
+}
+
+/* class selector used when multiple elements need the same styling */
+.classexample{
+    color: saddlebrown;
+}
+
+/* contextual selector */
+article form{
+    /* inherits from the parent element */
+    padding: 30px;
+    width: 30%;
+    /* border-width: 4px;
+    border-color: blue;
+    border-style: groove ridge; */
+    border: 4px double blue;
+}
+
+/* grouping of selectors */
+h1, h2{
+    background-color: green;
+}
+
+/* Cascading priority */
+/* inline, import, internal, external */
+/* #id, .class, tag */
+/* 1 - number of id, 2 - number of class, 3 - number of tag */
+
+/* css reset nullifies the complete styles across browsers */
+/* css normalize normalizes the styles across different browsers */
+form h3{
+    text-align: center;
+    color: blue;
+}

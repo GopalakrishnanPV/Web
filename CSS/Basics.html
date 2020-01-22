@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Different methods of defining a style sheet
+        Inline styling
+        Internal styling
+        External styling
+        Importing style sheet -->
+
+    <!-- Import styling -->
+    <style>
+        @import url("https://ww.google.com");
+    </style>
+
+    <!-- External styling -->
+    <link rel="stylesheet" type="text/css" href="Basics.css" />
+
+    <!-- Internal styling -->
+    <style>
+        /* Selector */
+        body {
+            /* Property : Value */
+            background-color: lightgray;
+        }
+
+        h2 {
+            background-color: lightyellow;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header p {
+            color: white;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Inline styling -->
+        <h2>Welcome to Global Bank Home Page !</h2>
+        <br /><br /> <br />
+
+        <p>Global bank is an international bank with branches in various cities of different countries</p>
+    </header>
+    <nav>
+        <p id="idexample">This is an example of id selector</p>
+        <p class="classexample">This is an example of a class selector</p>
+        <ul class="classexample">
+            <li>Fast</li>
+            <li>Secure</li>
+        </ul>
+        <ol class="classexample">
+            <li>Newsletter</li>
+            <li>Email</li>
+        </ol>
+    </nav>
+    <article>
+        <form action="#">
+            <h3>Login</h3> <br />
+            <label for="username">Username: </label>
+            <input type="text" id="username" /><br /><br />
+            <label for="password">Password: </label>
+            <input type="password" id="password" /><br /><br />
+            <input type="submit" id="submit" value="Login" />
+        </form>
+    </article>
+</body>
+
+</html>
