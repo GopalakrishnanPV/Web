@@ -1,0 +1,174 @@
+/* relational selector */
+/* direct child */
+div>p{
+    font-weight: bold;
+}
+
+/* direct sibling */
+div+p{
+    color: green;
+}
+/* all siblings */
+div~p{
+    text-decoration: underline;
+}
+
+/* attribute selector */
+a[target] {
+    text-decoration:none;
+}
+a[target=_blank] {
+    font-size : x-large;
+}
+
+section[class$="para"]::first-letter {
+    font-size:200%;
+    color:purple;
+}
+
+
+section[class*="para"]{
+    font-style: italic;
+}
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+ul li a 
+{
+    background-repeat: no-repeat;
+}
+a
+{
+	font-size:40px;
+}
+
+.rgba{
+    /* rgba (red, green, blue, alpha) model */
+    background-color: rgba(100, 30, 200, 0.8);
+}
+
+.hsla{
+    /* hsla (hue, saturation, lightness, alpha) model */
+    background-color: hsla(20,100%, 50%, 1);
+    font-weight: bold;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+.inline{
+    float: left;
+    margin: 50px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+#borderradiusround{
+    /* round border radius */
+    border-radius: 25px; /*  or border-radius: 10px 10px 10px 10px;  */
+}
+
+#borderradiuseliptical{
+    /* eliptical or oval border radius */
+    border-radius: 50px/30px;
+}
+
+
+#boxshadow {
+    /* horizontal offset, vertical offset, blur, spread, color */
+    box-shadow: 3px 3px 2px 2px rgba(100, 100, 200, 0.5);
+    
+}
+@font-face{
+    font-family: bangers-local;
+    src: url("assets/Bangers/Bangers-Regular.ttf");
+}
+
+#webfont{
+    font-family: "Bangers-local";
+    color: purple;
+}
+
+#textshadow{
+    /* horizontal offset, vertical offset, blur, color */
+    text-shadow: 2px 2px 1px rgba(40, 92, 161, 0.8);
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textshadowmultiple{
+    /* horizontal offset, vertical offset, blur, color */
+    text-shadow: 2px 2px 1px rgba(151, 167, 7, 0.8), -4px -5px 6px rgba(100, 100, 255, 0.7);
+}
+
+#textshadowglow{
+    /* horizontal offset, vertical offset, blur, color */
+    text-shadow: 0px 0px 12px green;
+}
+
+#translate{
+    transform: translate(50px,50px);
+}
+#scale{
+    transform: scale(0.5);
+}
+#rotate{
+    transform: rotate(200deg);
+}
+#skew{
+    transform: skew(10deg, 10deg);
+}
+.clear{
+    clear: both;
+}
+
+#transition{
+    background-color: red;
+    border-radius: 0%;
+    height: 10px;
+}
+
+#transition:hover{
+    transition: background-color 2s linear, border-radius 2s steps(5) 2s, height 2s ease;
+    background-color: green;
+    border-radius: 50%;
+    height:100px
+}
+
+@keyframes animation{
+    0%{height: 0px;background-color: purple;}
+    25%{height: 25px;background-color: red;}
+    50%{height: 50px;background-color: blue;}
+    100%{height: 100px; background-color: yellow;}
+}
+
+#animation{
+    animation: animation 2s linear 0s infinite alternate;
+    background-color: yellow;
+}
+
+@media screen and (min-width: 300px) and (max-width:600px){
+    body{
+        background-color: rgba(128, 255, 102, 1);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:1000px){
+    body{
+        background-color: hsla(20,100%, 50%, 1);
+    }
+}
+
+@media (min-width: 1000px){
+    body{
+        background-color: hsla(200,100%, 70%, 1);
+    }
+}
+
+
