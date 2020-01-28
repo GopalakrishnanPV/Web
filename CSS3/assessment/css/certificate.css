@@ -1,0 +1,40 @@
+body
+{
+	background-image:url('images/background1.jpg');
+	
+}
+#container
+{
+	width:800px;
+	height:600px;
+	padding:10px;
+	text-align:center;
+
+}
+#certificate
+{
+	width:400px;
+	height:400px; 
+	padding:10px; 
+	text-align:center;
+	margin-left:400px;
+	margin-top:80px;
+	background-color:white;
+	border: 100px solid transparent;
+	border-image: url(../images/certificate.jpg) 20% stretch;
+} 
+h1
+{
+	margin-left:170px;
+	color: #92a5de;
+	font: bold 40px Sans-Serif;
+}
+@font-face{
+	font-family: searun;
+	src: url(searun.ttf);
+}
+
+#heading{
+	font-family: searun;
+}
+

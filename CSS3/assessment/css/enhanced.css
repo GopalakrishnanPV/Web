@@ -1,0 +1,48 @@
+
+.menu
+{
+	padding: 50px 0px;
+	margin-left:400px;
+	position: relative;
+	background: rgba(0,0,0,0.2);
+	width: 500px;
+	height: 300px;
+	transition: border-radius 1s, box-shadow 1s;
+	
+}
+.menu:hover{
+	transition: border-radius 1s, box-shadow 1s;
+	border-radius: 50%;
+	box-shadow: 5px 5px 3px 3px rgba(255, 255,255,0.3);
+}
+.menu li
+{
+	font-size: 40px;
+	display: block;
+	line-height: 66px;
+}
+.menu li a{
+	white-space: nowrap;
+	color: transparent;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 3px #fff;
+	letter-spacing: 1px;
+}
+
+.menu li:hover
+{
+background-color:#710717;
+transition: transform 1s;
+transform: scale(1.2);
+}
+
+h3{
+	color:#768bc6;
+	text-shadow: 1px 1px 0px hsla(224, 41.2%, 60%, 1), 2px 3px 0px  hsla(224, 41.2%, 65%, 1), 3px 4px 0px  hsla(224, 41.2%, 70%, 1), 4px 5px 0px  hsla(224, 41.2%, 75%, 1), 5px 6px 0px  hsla(224, 41.2%, 80%, 1),6px 7px 0px hsla(224, 41.2%, 60%, 1);
+}
+
+#cf>img:hover{
+	opacity:0;
+}
