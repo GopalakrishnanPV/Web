@@ -3,26 +3,32 @@ body
 	background-image:url('images/background1.jpg');
 	
 }
+
+@keyframes zoom{
+	0%{transform: scale(1)}
+	100%{transform: scale(1.1)}
+}
 #container
 {
-	width:800px;
-	height:600px;
-	padding:10px;
-	text-align:center;
+	width: 500px;;
+	height:500px; 
+	margin: 0 400px;
+	margin-top:50px;
+	border: 10px solid green;
+	animation: zoom 2s linear 3s 1 forwards;
 
 }
 #certificate
 {
 	width:400px;
 	height:400px; 
-	padding:10px; 
 	text-align:center;
-	margin-left:400px;
-	margin-top:80px;
 	background-color:white;
-	border: 100px solid transparent;
-	border-image: url(../images/certificate.jpg) 20% stretch;
+	border: 50px solid transparent;
+	border-image: url(../images/certificate.jpg) 50 stretch;
 } 
+
+
 h1
 {
 	margin-left:170px;
