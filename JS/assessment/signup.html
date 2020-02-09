@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup - Megacart</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <form action="index.html" onsubmit="return validateSignupForm(this)">
+        <h2>The Mega Cart</h2>
+        <label for="username">Enter Username
+            <input type="text" id="username" />
+        </label>
+        <label for="email">Enter Email ID
+            <input type="text" id="email" />
+        </label>
+        <label for="mobile">Enter Mobile
+            <input type="text" id="mobile" />
+        </label>
+        <label for="password">Enter Password
+            <input type="password" id="password" />
+        </label>
+        <label for="confirm_password">Confirm Password
+            <input type="password" id="confirm_password" />
+        </label>
+        <button type="submit" id="signupBtn">Signup</button>
+        <p>Existing User? Login here <a href="index.html">Login</a> </p>
+        <script src="js/signup.js"></script>
+
+    </form>
+</body>
+
+</html>

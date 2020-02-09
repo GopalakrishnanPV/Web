@@ -219,34 +219,148 @@
 // console.log(car.color);
 // console.log(car["color"]);
 
-// BUILT IN FUNCTIONS
-// STRINGS
-var myStr = "Are you enjoying JavaScript? Are you?";
-console.log(myStr.match('Are'));
-console.log(myStr.replace(/Are/g, "Do"));
-console.log(myStr.search('Are'));
-console.log(myStr.split('Are'));
-console.log("SLICE: " + myStr.slice(8, -2));
-console.log("SUBSTRING: " + myStr.substring(18, 8));
-console.log("SUBSTR: " + myStr.substr(4, 6));
+// // BUILT IN FUNCTIONS
+// // STRINGS
+// var myStr = "Are you enjoying JavaScript? Are you?";
+// console.log(myStr.match('Are'));
+// console.log(myStr.replace(/Are/g, "Do"));
+// console.log(myStr.search('Are'));
+// console.log(myStr.split('Are'));
+// console.log("SLICE: " + myStr.slice(8, -2));
+// console.log("SUBSTRING: " + myStr.substring(18, 8));
+// console.log("SUBSTR: " + myStr.substr(4, 6));
 
-// REGEX
-var charRegex = new RegExp("(?=.*q)");
-var regexString = "qwertyuiopasdfghjklzxcvbnm1234567890-=[]\;',./_+{}|:\"<>?";
-console.log(charRegex.test(regexString));
-console.log(regexString.replace(charRegex, "qqqqqqqq"));
-console.log(regexString.search(charRegex));
+// // REGEX
+// var charRegex = new RegExp("(?=.*q)");
+// var regexString = "qwertyuiopasdfghjklzxcvbnm1234567890-=[]\;',./_+{}|:\"<>?";
+// console.log(charRegex.test(regexString));
+// console.log(regexString.replace(charRegex, "qqqqqqqq"));
+// console.log(regexString.search(charRegex));
 
-var username = "gopalakrishnanp";
-var email = "gopalakrishnanp@gmail.com";
-var number = 123456711120;
-var regExUsername = new RegExp("(?=.[a-zA-Z0-9]{6-10})");
-var regExEmail = new RegExp("(?=.+@)(?=.+.com)");
-var regExNumber = new RegExp("(?=^[0-9]{10,14}$)");
+// var username = "gopalakrishnanp";
+// var email = "gopalakrishnanp@gmail.com";
+// var number = 123456711120;
+// var regExUsername = new RegExp("(?=.[a-zA-Z0-9]{6-10})");
+// var regExEmail = new RegExp("(?=.+@)(?=.+.com)");
+// var regExNumber = new RegExp("(?=^[0-9]{10,14}$)");
 
 
-console.log(regExUsername.test(username));
-console.log(regExEmail.test(email));
-console.log(regExNumber.test(number));
+// console.log(regExUsername.test(username));
+// console.log(regExEmail.test(email));
+// console.log(regExNumber.test(number));
+
+// // ARRAYS
+// var array = new Array("HTML", "CSS3", "JAVASCRIPT");
+// var array2 = ["HTML", "CSS3", "JAVASCRIPT"];
+// array2.push("JQUERY");
+// array2.pop();
+// console.log(array2);
+// array2.splice(2, 0, "BMW");
+// console.log(array2.concat(array));
+// array2.forEach(x => {
+//     console.log(x.toLowerCase());
+// });
+
+
+
+
+// // MATH
+// console.log(Math.ceil(4.6));
+// console.log(Math.floor(4.6));
+// console.log(Math.round(4.6));
+// console.log(Math.min(4, 6));
+// console.log(Math.max(4, 6));
+// console.log(Math.floor(Math.random() * 100));
+
+// // JSON
+
+
+var objectJSON = {
+    firstName: "Bob",
+    lastName: "Horton",
+};
+
+// console.log(JSON.stringify(objectJSON));
+
+// var stringJSON = '{"firstName": "Bob","lastName": "Horton"}';
+// console.log(JSON.parse(stringJSON));
+
+// BOM - BROWSER OBJECT MODEL
+// document, window, history, navigator, location
+
+// DOCUMENT
+
+// document.getElementById("course").style.color = "red";
+
+// function submit_form() {
+//     // getelement by id
+//     console.log(document.getElementById("name").value);
+//     // getelement by class name
+//     console.log(document.getElementsByClassName("email").value);
+//     // getelement by tagname
+//     console.log(document.getElementsByTagName("input").value);
+//     // get elements by css selector
+//     console.log(document.querySelectorAll("input").value);
+// }
+
+
+// // WINDOW
+// console.log(window.innerHeight);
+// console.log(window.innerWidth);
+// console.log(window.outerHeight);
+// console.log(window.outerWidth);
+// // localStorage.setItem("usernameObject", objectJSON);
+// console.log(localStorage.getItem("usernameObject"));
+// // sessionStorage.setItem("username", "Bob Horton");
+// console.log(sessionStorage.getItem("username"));
+
+// window.open("https://www.google.com");
+// setTimeout(() => { console.log("hello") }, 5000);
+// window.close();
+
+
+// // History (Revisit)
+// location.assign('http://www.facebook.com');
+// history.back();
+// console.log(history.forward());
+// // console.log(history.go(1));
+// console.log(history.length);
+
+
+// // Navigator
+
+// console.log(navigator.appName);
+// console.log(navigator.appVersion);
+// console.log(navigator.cookieEnabled);
+// console.log(navigator.platform);
+// console.log(navigator.userAgent);
+
+
+// // Locati
+
+// console.log(location.href);
+// console.log(location.hostname);
+// console.log(location.pathname);
+// console.log(location.port);
+// console.log(location.protocol);
+
+// var blue = "hello world";
+// document.write(window.blue);
+
+// console.log(document.body.parentNode);
+// console.log(document.body.childNodes);
+// console.log(document.body.firstChild);
+// console.log(document.body.childNodes);
+// console.log(document.getElementById("course").nextElementSibling);
+// console.log(document.body.previousElementSibling);
+
+// Create Element
+
+// var header = document.createElement("h1");
+// var headerText = document.createTextNode("Hello World!!");
+// document.body.appendChild(header).appendChild(headerText);
+// document.body.header.append(header).appendChild(headerText);
+
+// document.body.header.remove(header);
 
 
