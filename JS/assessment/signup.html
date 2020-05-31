@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="index.html" onsubmit="return validateSignupForm(this)">
+    <form id="signupForm" onsubmit="validateSignupForm()">
         <h2>The Mega Cart</h2>
         <label for="username">Enter Username
             <input type="text" id="username" />
@@ -28,10 +28,17 @@
             <input type="password" id="confirm_password" />
         </label>
         <button type="submit" id="signupBtn">Signup</button>
-        <p>Existing User? Login here <a href="index.html">Login</a> </p>
-        <script src="js/signup.js"></script>
-
+        <p>Existing User? Login here <a href="login.html">Login</a> </p>
     </form>
+    <script src="js/signup.js"></script>
+    <script>
+        const usernameRegex = '^[a-zA-Z0-9]{6,10}$';
+
+        function validateSignupForm() {
+            usernameRegex.test(document.getElementById('username').value) ? console.log("Username valid") : alert("Invalid Username");
+        }
+
+    </script>
 </body>
 
 </html>

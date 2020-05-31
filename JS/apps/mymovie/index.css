@@ -1,0 +1,59 @@
+body{
+    background: #000000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#bannerimage{
+    width: 100%;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    position: absolute;
+    left: 3%;
+    color: #FFFFFF;
+    /* height: 10px; */
+}
+
+#logoimage{
+    padding:25px 10px;
+}
+
+#signupLink{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#leftarrow{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+#rightarrow{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+}
+.arrow{
+    width: 25px;
+    height: 25px;  
+}
+
+#copyright{
+    float: left;
+    margin-left: 45% ;
+}
+#time{
+    float: right;
+}
+#footer{
+    color: #FFFFFF;
+    padding: 0 10px;
+}

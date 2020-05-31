@@ -202,12 +202,12 @@
 // setInterval(executeMe2, 3000);
 
 
-// EVENT HANDLERS
+// // EVENT HANDLERS
 // function execute_onclick(name) {
 //     alert(name + " says hello!");
 // }
 
-// // OBJECTS
+// // OBJECTS (USER DEFINED)
 // var car = {
 //     name: "BMW",
 //     model: "SUV",
@@ -219,7 +219,7 @@
 // console.log(car.color);
 // console.log(car["color"]);
 
-// // BUILT IN FUNCTIONS
+// // OBJECTS (BUILT IN)
 // // STRINGS
 // var myStr = "Are you enjoying JavaScript? Are you?";
 // console.log(myStr.match('Are'));
@@ -236,15 +236,12 @@
 // console.log(charRegex.test(regexString));
 // console.log(regexString.replace(charRegex, "qqqqqqqq"));
 // console.log(regexString.search(charRegex));
-
 // var username = "gopalakrishnanp";
 // var email = "gopalakrishnanp@gmail.com";
 // var number = 123456711120;
 // var regExUsername = new RegExp("(?=.[a-zA-Z0-9]{6-10})");
 // var regExEmail = new RegExp("(?=.+@)(?=.+.com)");
 // var regExNumber = new RegExp("(?=^[0-9]{10,14}$)");
-
-
 // console.log(regExUsername.test(username));
 // console.log(regExEmail.test(email));
 // console.log(regExNumber.test(number));
@@ -261,9 +258,6 @@
 //     console.log(x.toLowerCase());
 // });
 
-
-
-
 // // MATH
 // console.log(Math.ceil(4.6));
 // console.log(Math.floor(4.6));
@@ -273,13 +267,10 @@
 // console.log(Math.floor(Math.random() * 100));
 
 // // JSON
-
-
-var objectJSON = {
-    firstName: "Bob",
-    lastName: "Horton",
-};
-
+// var objectJSON = {
+//     firstName: "Bob",
+//     lastName: "Horton",
+// };
 // console.log(JSON.stringify(objectJSON));
 
 // var stringJSON = '{"firstName": "Bob","lastName": "Horton"}';
@@ -288,9 +279,32 @@ var objectJSON = {
 // BOM - BROWSER OBJECT MODEL
 // document, window, history, navigator, location
 
-// DOCUMENT
-
+// // DOCUMENT
+// // Dynamic styling
 // document.getElementById("course").style.color = "red";
+// // Get attribute
+// console.log(document.getElementById("course").attributes["class"].value);
+// // Set attribute
+// document.getElementById("course").setAttribute("class", "courseClassNew")
+// console.log(document.getElementById("course").attributes["class"].value);
+let ateicecream = false;
+function eatIcecream() {
+    if (!ateicecream) {
+        ateicecream = true;
+        document.getElementById("conetitle").innerHTML = "Hope you Liked it!";
+        document.getElementById("coneimage").src = "assets/empty-cone.jpg";
+        document.getElementById("conehint").innerHTML = "Click to refill";
+        document.body.style.backgroundColor = "lightgreen";
+
+    } else {
+        ateicecream = false;
+        document.getElementById("conetitle").innerHTML = "Here is your refilled cone!";
+        document.getElementById("coneimage").src = "assets/full-cone.jpg";
+        document.getElementById("conehint").innerHTML = "Enjoy yourself!";
+        document.body.style.backgroundColor = "lightblue";
+    }
+
+}
 
 // function submit_form() {
 //     // getelement by id
@@ -303,7 +317,6 @@ var objectJSON = {
 //     console.log(document.querySelectorAll("input").value);
 // }
 
-
 // // WINDOW
 // console.log(window.innerHeight);
 // console.log(window.innerWidth);
@@ -313,7 +326,6 @@ var objectJSON = {
 // console.log(localStorage.getItem("usernameObject"));
 // // sessionStorage.setItem("username", "Bob Horton");
 // console.log(sessionStorage.getItem("username"));
-
 // window.open("https://www.google.com");
 // setTimeout(() => { console.log("hello") }, 5000);
 // window.close();
@@ -326,9 +338,7 @@ var objectJSON = {
 // // console.log(history.go(1));
 // console.log(history.length);
 
-
 // // Navigator
-
 // console.log(navigator.appName);
 // console.log(navigator.appVersion);
 // console.log(navigator.cookieEnabled);
@@ -336,17 +346,14 @@ var objectJSON = {
 // console.log(navigator.userAgent);
 
 
-// // Locati
-
+// // Location
 // console.log(location.href);
 // console.log(location.hostname);
 // console.log(location.pathname);
 // console.log(location.port);
 // console.log(location.protocol);
-
 // var blue = "hello world";
 // document.write(window.blue);
-
 // console.log(document.body.parentNode);
 // console.log(document.body.childNodes);
 // console.log(document.body.firstChild);
@@ -355,12 +362,10 @@ var objectJSON = {
 // console.log(document.body.previousElementSibling);
 
 // Create Element
-
 // var header = document.createElement("h1");
 // var headerText = document.createTextNode("Hello World!!");
 // document.body.appendChild(header).appendChild(headerText);
 // document.body.header.append(header).appendChild(headerText);
-
 // document.body.header.remove(header);
 
 
